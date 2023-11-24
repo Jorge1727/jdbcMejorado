@@ -53,6 +53,9 @@
             int filasAfectadas = ps.executeUpdate();
 
             System.out.println("ENTRENAMIENTO BORRADO:  " + filasAfectadas);
+            out.println("Entrenamiento eliminado");
+            out.println("<br>");
+            out.println("<td><a href=\"index.jsp\">Volver al menu</a></td>\n");
 
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -67,10 +70,9 @@
     }
 %>
 
-<!-- REDIRECCIÓN POR JavaScript EN EL CLIENTE  -->
+<!-- REDIRECCIÓN POR JavaScript EN EL CLIENTE
 <script>
-    alert("Entrenamiento Eliminado");
     document.location = "pideNumeroSocio.jsp";
-</script>
+</script> -->
 </body>
 </html>

@@ -68,9 +68,9 @@
     %>
 
     <!-- REDIRECCIÓN POR JavaScript EN EL CLIENTE  -->
-    <script>
+    <!--<script>                      PRIMERO UN ALERT Y DESPUES UNA REDIRECCIÓN
 		alert("Socio Eliminado");
 		document.location = "pideNumeroSocio.jsp";
-	</script>
+	</script>-->
   </body>
 </html>

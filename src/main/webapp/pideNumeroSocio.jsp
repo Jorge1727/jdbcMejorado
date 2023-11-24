@@ -57,6 +57,6 @@
       s.close();
      %>
     </table>
-    <a href=\"index.jsp\">Volver al menu</a>
+    <a href="index.jsp">Volver al menu</a>
   </body>
 </html>
