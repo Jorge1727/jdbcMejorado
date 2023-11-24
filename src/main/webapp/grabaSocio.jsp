@@ -171,18 +171,11 @@
         out.println("<br>");
         out.println("<td><a href=\"index.jsp\">Volver al menu</a></td>\n");
     } else {
-        int numErrores = errores.size();
+        // Almacena los errores en la sesión
+        session.setAttribute("erroresValidacion", errores);
 
-        out.println("<table>");
-        out.println("<tr>");
-        for (int i = 0; i < numErrores; i++)
-        {
-            out.println("<td>" + errores.get(i) + "</td>");
-        }
-        out.println("</tr>");
-        out.println("</table>");
-        out.println("<br>");
-        out.println("<a href=\"formularioSocio.jsp\">Volver al formulario</a>\n<a href=\"index.jsp\">Volver al menu</a>");
+        // Redirecciona a formularioSocio.jsp
+        response.sendRedirect("formularioSocio.jsp");
     }
 %>
 </body>

@@ -56,3 +56,15 @@ tbody td{
     color:#666;
     text-shadow:1px 1px 1px #fff;
 }
+
+tbody .error{
+    padding:10px;
+    text-align:center;
+    background-color: #ff4949;
+    border: 2px solid #E7EFE0;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
