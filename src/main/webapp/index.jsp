@@ -2,10 +2,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>JSP - Club de Baloncesto</title>
 </head>
 <body>
-<h1><%= "Hello World!" %>
+<h1><%= "Zona de Socios" %>
 </h1>
 <br/>
 <a href="hello-servlet">Hello Servlet</a>
@@ -15,5 +15,7 @@
 <a href="formularioSocio.jsp">Fomulario de Socio Nuevo</a>
 <br>
 <a href="pideNumeroSocio.jsp">Listado de Socios</a>
+<br>
+<a href="formularioEntrenamiento.jsp">Formulario de Entrenamiento</a>
 </body>
 </html>

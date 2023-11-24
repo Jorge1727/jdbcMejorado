@@ -12,7 +12,7 @@
   <body>
     <%
       Class.forName("com.mysql.cj.jdbc.Driver");
-      Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/baloncesto","root", "user");
+      Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/baloncesto","root", "123456");
       Statement s = conexion.createStatement();
 
       ResultSet listado = s.executeQuery ("SELECT * FROM socio");
@@ -33,11 +33,30 @@
         <input type="hidden" name="codigo" value="<%=listado.getString("socioID") %>"/>
         <input type="submit" value="borrar">
       </form>
-      </td></tr>
+      </td>
+
+        <td>
+        <form method="get" action="detalleSocio.jsp">
+            <input type="hidden" name="codigo" value="<%=listado.getString("socioID") %>"/>
+            <input type="submit" value="detalle">
+        </form>
+        </td>
+
+        <td>
+            <form method="get" action="entrenamientosSocio.jsp">
+                <input type="hidden" name="codigo" value="<%=listado.getString("socioID") %>"/>
+                <input type="submit" value="entrenamientos">
+            </form>
+        </td>
+
+
+        </tr>
     <%
       } // while   
       conexion.close();
+      s.close();
      %>
     </table>
+    <a href=\"index.jsp\">Volver al menu</a>
   </body>
 </html>

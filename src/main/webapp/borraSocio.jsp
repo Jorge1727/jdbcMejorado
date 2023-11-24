@@ -31,7 +31,7 @@
 		//CARGA DEL DRIVER Y PREPARACIÓN DE LA CONEXIÓN CON LA BBDD
 		//						v---------UTILIZAMOS LA VERSIÓN MODERNA DE LLAMADA AL DRIVER
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/baloncesto","root", "user");
+		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/baloncesto","root", "123456");
 		
 //>>>>>>NO UTILIZAR STATEMENT EN QUERIES PARAMETRIZADAS
 //      Statement s = conexion.createStatement();
@@ -66,8 +66,11 @@
 	  
     }
     %>
-    
+
     <!-- REDIRECCIÓN POR JavaScript EN EL CLIENTE  -->
-    <script>document.location = "pideNumeroSocio.jsp"</script> 
+    <script>
+		alert("Socio Eliminado");
+		document.location = "pideNumeroSocio.jsp";
+	</script>
   </body>
 </html>
