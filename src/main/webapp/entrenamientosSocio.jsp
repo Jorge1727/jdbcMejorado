@@ -51,6 +51,7 @@
                 String tipoEntrenamiento = rs.getString("tipo_entrenamiento");
                 String ubicacion = rs.getString("ubicacion");
 
+
                 String fecha = rs.getString("fecha");
 
                 // Ahora puedes mostrar estos detalles en la página HTML
